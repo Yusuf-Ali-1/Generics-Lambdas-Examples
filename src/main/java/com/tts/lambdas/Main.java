@@ -11,6 +11,8 @@ public class Main {
 
             }
         };
+
+        Functional myOtherFunctional = new FunctionalImpl();
     }
 }
 
