@@ -20,7 +20,7 @@ public class Main {
         }
 
 
-    public static <T extends Comparable> int greaterThan(T[] numArray, T element) {
+    public static <T extends Comparable<T>> int greaterThan(T[] numArray, T element) {
         int count = 0;
         for (T e : numArray)
         if (e.compareTo(element) > 0)
@@ -32,7 +32,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        // this is how we instantiate an arraylist
+        // This is how we instantiate an arraylist
         // take note of the generic in the diamond <>
         // we use this generic to define a type in the interface list
         List<Integer> integerList = new ArrayList<>();
