@@ -20,13 +20,20 @@ public class Main {
         }
 
 
-    public static <T extends Comparable<T>> int greaterThan(T[] numArray, T element) {
-        int count = 0;
-        for (T e : numArray)
-        if (e.compareTo(element) > 0)
-                ++count;
-        return count;
-    }
+
+
+        public static <T extends Comparable<T>> int greaterThan(T[] numArray, T element) {
+            int count = 0;
+            for (T e : numArray)
+            if (e.compareTo(element) > 0)
+                    ++count;
+            return count;
+        }
+
+        public static <T, R> void printTwoGenerics(T x, R y) {
+            System.out.println(x + " : " + y);
+        }
+
 
 
     public static void main(String[] args) {
@@ -48,16 +55,27 @@ public class Main {
         stringList.add("a");
         stringList.add("generic");
 
-
+        System.out.println("=== Integer data type ===");
         printList(integerList);
 
-        // String data type
+        System.out.println("\n=== String data type ===");
         System.out.println(returnValue("Hello"));
 
-        // Integer data type
+        System.out.println("\n=== Integer data type ===");
         System.out.println(returnValue(4000));
 
+        System.out.println("\n=== String data type ===");
         printList(stringList);
+
+        System.out.println("\n=== Two Generics ===");
+        printTwoGenerics( 2000L , "this is a string omg");
+
+
+        System.out.println("\n=== Raw Generics ===");
+        GenericClass genericClass = new GenericClass<>("this is the generic", "Bob");
+
+
+
 
     }
 }
