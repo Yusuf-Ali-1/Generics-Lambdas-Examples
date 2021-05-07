@@ -1,4 +1,4 @@
-package com.tts;
+package com.tts.generics;
 
 public class GenericClass <T>{
 

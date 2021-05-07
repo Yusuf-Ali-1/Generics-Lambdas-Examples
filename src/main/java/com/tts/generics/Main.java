@@ -1,4 +1,4 @@
-package com.tts;
+package com.tts.generics;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -135,7 +135,7 @@ public class Main {
         List<Double> list2=Arrays.asList(4.1,5.1,6.1);
 
         // printing the sum of elements in list
-        System.out.print("Total sum is:"+sum(list2));
+        System.out.print("Total sum is: "+sum(list2));
 
         // printing our interList and stringList
         // using the printCollections method
@@ -147,7 +147,7 @@ public class Main {
         /*
          Object is a superclass of Integer
          printSuperClass(Arrays.asList(new Object(), new Object()));
-        printSuperClass2(Arrays.asList(new D(), new D()));
+         printSuperClass2(Arrays.asList(new D(), new D()));
         */
 
 
