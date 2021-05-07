@@ -71,7 +71,7 @@ public class Main {
         printTwoGenerics( 2000L , "this is a string omg");
 
 
-        System.out.println("\n=== Raw Generics ===");
+        System.out.println("\n=== Raw Generic Class ===");
         GenericClass genericClass = new GenericClass<>("this is the generic", "Bob");
 
 
