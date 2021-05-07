@@ -13,6 +13,8 @@ public class Main {
 
         }
 
+        // Using Generics, it is possible to create classes
+        // that work with different data types.
         public static <T> T returnValue(T myValue){
             return myValue;
         }
