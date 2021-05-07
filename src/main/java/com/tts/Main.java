@@ -42,8 +42,10 @@ public class Main {
 
         printList(integerList);
 
+        // String data type
         System.out.println(returnValue("Hello"));
 
+        // Integer data type
         System.out.println(returnValue(4000));
 
     }
