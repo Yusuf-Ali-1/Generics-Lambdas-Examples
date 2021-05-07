@@ -73,6 +73,7 @@ public class Main {
 
         System.out.println("\n=== Raw Generic Class ===");
         GenericClass genericClass = new GenericClass<>("this is the generic", "Bob");
+        System.out.println(genericClass);
 
 
 
