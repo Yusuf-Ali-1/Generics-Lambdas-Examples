@@ -160,7 +160,7 @@ public class Main {
                 .forEach(e -> System.out.println(e));
 
         myIntegerList.stream()
-                .filter( e -> e < 5)
+                .map( e -> e + 1)
                 .forEach(System.out::println);
 
 
