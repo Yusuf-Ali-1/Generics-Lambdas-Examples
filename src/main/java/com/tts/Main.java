@@ -34,7 +34,7 @@ public class Main {
 
         // This is how we instantiate an arraylist
         // take note of the generic in the diamond <>
-        // we use this generic to define a type in the interface list
+        // we use this generic to define a type in the interface List
         List<Integer> integerList = new ArrayList<>();
 
         integerList.add(4);
@@ -56,6 +56,8 @@ public class Main {
 
         // Integer data type
         System.out.println(returnValue(4000));
+
+        printList(stringList);
 
     }
 }
