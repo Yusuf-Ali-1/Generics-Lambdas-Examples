@@ -33,6 +33,12 @@ public class Main {
         integerList.add(3);
         integerList.add(645);
 
+        List<String> stringList = new ArrayList<>();
+        stringList.add("Hello");
+        stringList.add("from");
+        stringList.add("a");
+        stringList.add("generic");
+
 
         printList(integerList);
 
