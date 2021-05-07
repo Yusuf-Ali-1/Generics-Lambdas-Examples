@@ -21,6 +21,10 @@ public class Main {
             System.out.println(list);
         }
 
+        public static void printSuperClass2(List<? super B> list){
+            System.out.println(list);
+        }
+
 
         public static <W> void printList( List<W> list) {
             for(W element : list) {
@@ -119,7 +123,7 @@ public class Main {
         GenericClass genericClass = new GenericClass<>("this is the generic", "Bob");
         System.out.println(genericClass);
 
-        System.out.println("\n=== Wildcards ? ==");
+        System.out.println("\n=== Wildcards ? ===");
 
         // Upper Bounded Integer List
         List<Integer> list1= Arrays.asList(4,5,6,7);
@@ -137,19 +141,14 @@ public class Main {
         // using the printCollections method
         printCollection(integerList, stringList);
 
-        System.out.println("\n=== Super Class Wildcards  ==");
+        System.out.println("\n=== Super Class Wildcards ===");
         printSuperClass(Arrays.asList(1,2,3,4,5));
-        printSuperClass(Arrays.asList(new Object(), new Object()));
 
-
-
-
-
-
-
-
-
-
+        /*
+         Object is a superclass of Integer
+         printSuperClass(Arrays.asList(new Object(), new Object()));
+        printSuperClass2(Arrays.asList(new D(), new D()));
+        */
 
 
     }
