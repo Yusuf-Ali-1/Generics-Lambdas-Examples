@@ -17,6 +17,10 @@ public class Main {
             B b = lb.get(0);
         }
 
+        public static void printSuperClass(List<? super Integer> list){
+            System.out.println(list);
+        }
+
 
         public static <W> void printList( List<W> list) {
             for(W element : list) {
@@ -132,6 +136,12 @@ public class Main {
         // printing our interList and stringList
         // using the printCollections method
         printCollection(integerList, stringList);
+
+        System.out.println("\n=== Super Class Wildcards  ==");
+        printSuperClass(Arrays.asList(1,2,3,4,5));
+        printSuperClass(Arrays.asList(new Object(), new Object()));
+
+
 
 
 
