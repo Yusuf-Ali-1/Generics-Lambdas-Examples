@@ -35,6 +35,12 @@ public class Main {
 
         System.out.println(otherLambda.operation(5,4));
 
+        SmallFunctional smallFunctional = message -> System.out.println(message);
+
+        smallFunctional.smallPrint("Hello from a small lambda");
+
+        SmallFunctional smallMethodReference = System.out::println;
+
     }
 
 }
