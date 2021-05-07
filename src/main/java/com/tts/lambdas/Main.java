@@ -155,6 +155,9 @@ public class Main {
 
         List<Integer> myIntegerList = Arrays.asList(3,4,1,89,72);
 
+        // .filter and .forEach are known as higher order functions
+        // they accept arguments as parameters
+        // the way we utilize them is via lambdas
         myIntegerList.stream()
                 .filter( e -> e > 5)
                 .forEach(e -> System.out.println(e));
