@@ -143,7 +143,7 @@ public class Main {
             return x + y;
         };
 
-        System.out.println(otherLambda.operation(5,4));
+        System.out.println(otherLambda.operation(5,3));
 
         SmallFunctional smallFunctional = message -> System.out.println(message);
 
@@ -158,6 +158,12 @@ public class Main {
         myIntegerList.stream()
                 .filter( e -> e > 5)
                 .forEach(e -> System.out.println(e));
+
+        myIntegerList.stream()
+                .filter( e -> e < 5)
+                .forEach(System.out::println);
+
+
 
 
 
