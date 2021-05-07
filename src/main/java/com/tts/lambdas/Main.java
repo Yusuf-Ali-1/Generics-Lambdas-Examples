@@ -28,9 +28,12 @@ public class Main {
 //        };
 
         Functional myLambdaFunctional = () -> System.out.println("This is an anonymous class");
-        Functional otherLambda = () -> {
-
+        OtherFunctional otherLambda = (x, y) -> {
+            System.out.println("I'm inside a multi-parameter lambda ");
+            return x + y;
         };
+
+        System.out.println(otherLambda.operation(5,4));
 
     }
 
