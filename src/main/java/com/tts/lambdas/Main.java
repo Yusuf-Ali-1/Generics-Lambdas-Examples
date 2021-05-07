@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // this is an anonymous inner class
         Functional myFunctional = new Functional() {
             @Override
             public void doSomething() {
