@@ -117,18 +117,20 @@ public class Main {
 
         System.out.println("\n=== Wildcards ? ==");
 
-        //Upper Bounded Integer List
+        // Upper Bounded Integer List
         List<Integer> list1= Arrays.asList(4,5,6,7);
 
-        //printing the sum of elements in list
+        // printing the sum of elements in list
         System.out.println("Total sum is: "+sum(list1));
 
-        //Double list
+        // Double list
         List<Double> list2=Arrays.asList(4.1,5.1,6.1);
 
-        //printing the sum of elements in list
+        // printing the sum of elements in list
         System.out.print("Total sum is:"+sum(list2));
 
+        // printing our interList and stringList
+        // using the printCollections method
         printCollection(integerList, stringList);
 
 
