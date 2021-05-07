@@ -155,7 +155,9 @@ public class Main {
 
         List<Integer> myIntegerList = Arrays.asList(3,4,1,89,72);
 
-        myIntegerList.stream().filter();
+        myIntegerList.stream()
+                .filter( e -> e > 5)
+                .forEach(e -> System.out.println(e));
 
 
 
