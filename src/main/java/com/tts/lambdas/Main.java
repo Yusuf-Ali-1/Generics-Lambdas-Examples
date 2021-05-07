@@ -153,6 +153,12 @@ public class Main {
 
         smallMethodReference.smallPrint("Hello from another small method reference");
 
+        List<Integer> myIntegerList = Arrays.asList(3,4,1,89,72);
+
+        myIntegerList.stream().filter();
+
+
+
     }
 
 }
