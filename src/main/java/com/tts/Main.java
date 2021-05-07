@@ -5,7 +5,17 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
+class A {}
+class B extends A {}
+class C extends B {}
+class D extends B {}
+
+
 public class Main {
+
+        public void otherMethod(List<? extends B> lb){
+            B b = lb.get(0);
+        }
 
 
         public static <W> void printList( List<W> list) {
@@ -105,13 +115,19 @@ public class Main {
         GenericClass genericClass = new GenericClass<>("this is the generic", "Bob");
         System.out.println(genericClass);
 
-        System.out.println("\n=== Wildcard ==");
+        System.out.println("\n=== Wildcards ? ==");
 
         //Upper Bounded Integer List
         List<Integer> list1= Arrays.asList(4,5,6,7);
 
         //printing the sum of elements in list
         System.out.println("Total sum is: "+sum(list1));
+
+        //Double list
+        List<Double> list2=Arrays.asList(4.1,5.1,6.1);
+
+        //printing the sum of elements in list
+        System.out.print("Total sum is:"+sum(list2));
 
         printCollection(integerList, stringList);
 
