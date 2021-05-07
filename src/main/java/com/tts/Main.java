@@ -20,6 +20,15 @@ public class Main {
         }
 
 
+    public static <T extends Comparable> int greaterThan(T[] numArray, T element) {
+        int count = 0;
+        for (T e : numArray)
+        if (e.compareTo(element) > 0)
+                ++count;
+        return count;
+    }
+
+
     public static void main(String[] args) {
 
 
