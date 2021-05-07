@@ -1,6 +1,8 @@
 package com.tts;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 public class Main {
@@ -32,6 +34,32 @@ public class Main {
 
         public static <T, R> void printTwoGenerics(T x, R y) {
             System.out.println(x + " : " + y);
+        }
+
+        // Wildcards ?
+        private static double sum(List<? extends Number> list)
+        {
+            double sum=0.0;
+            for (Number i: list)
+            {
+                sum+=i.doubleValue();
+            }
+
+            return sum;
+        }
+
+
+        // Wildcards refer to an unknown type
+        // this acts similarly to utilizing a single named generic
+        // however it doesn't enforce data types
+        public static void printCollection(Collection<?> c, Collection<?> d){
+            for(Object e: c){
+                System.out.println(e);
+            }
+
+            for(Object e: d){
+                System.out.println(e);
+            }
         }
 
 
@@ -74,6 +102,20 @@ public class Main {
         System.out.println("\n=== Raw Generic Class ===");
         GenericClass genericClass = new GenericClass<>("this is the generic", "Bob");
         System.out.println(genericClass);
+
+        System.out.println("\n=== Wildcard ==");
+
+        //Upper Bounded Integer List
+        List<Integer> list1= Arrays.asList(4,5,6,7);
+
+        //printing the sum of elements in list
+        System.out.println("Total sum is: "+sum(list1));
+
+        printCollection(integerList, stringList);
+
+
+
+
 
 
 
